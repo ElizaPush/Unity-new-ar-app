@@ -1,0 +1,55 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public abstract class InteractableObjects : MonoBehaviour
+{
+    private List<InteractableObjects> _interactables = new List<InteractableObjects>();
+
+    protected enum State
+    {
+        Idle,Active
+    }
+
+    protected State ARObjectState = State.Idle;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.TryGetComponent<InteractableObjects>(out var interactable))
+        {
+            AddInteractable(interactable);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.TryGetComponent<InteractableObjects>(out var interactable))
+        {
+            RemoveInteractable(interactable);
+        }
+    }
+
+    protected void AddInteractable(InteractableObjects interactable)
+    {
+        _interactables.Add(interactable);
+        SetState(State.Active);
+
+    }
+    protected void RemoveInteractable(InteractableObjects interactable)
+    {
+        _interactables.Remove(interactable);
+        if (_interactables.Count == 0) SetState(State.Idle);
+    }
+    private void OnDisable()
+    {
+        foreach(var interactable in _interactables)
+        {
+            interactable.RemoveInteractable(this);
+        }
+        _interactables.Clear();
+        SetState(State.Idle);
+    }
+
+    protected virtual void SetState(State state)
+    {
+        ARObjectState = state;
+    }
+}

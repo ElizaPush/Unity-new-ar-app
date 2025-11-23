@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
+using System.Collections;
+using UnityEngine.XR.ARSubsystems;
 
 public class ARPlaceCube : MonoBehaviour
 {
@@ -18,11 +20,7 @@ public class ARPlaceCube : MonoBehaviour
     {
         EnhancedTouchSupport.Disable();
     }
-    void Start()
-    {
-        
-    }
-
+    
     void Update()
     {
         if (!raycastManager) return;
@@ -32,7 +30,7 @@ public class ARPlaceCube : MonoBehaviour
         Vector2 screenPosition = default;
 
         
-            isPlacing = true;
+            
 
             if(Touchscreen.current != null)
             {
