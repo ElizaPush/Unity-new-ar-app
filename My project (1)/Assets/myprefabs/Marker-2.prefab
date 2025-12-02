@@ -169,6 +169,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4051779461553297096, guid: 75e5103c63d17ca47baf62cea0df8fb2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5487848539200141416, guid: 75e5103c63d17ca47baf62cea0df8fb2, type: 3}
       propertyPath: m_Name
       value: Purple
@@ -187,11 +191,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 3516371421964930131}
   m_SourcePrefab: {fileID: 100100000, guid: 75e5103c63d17ca47baf62cea0df8fb2, type: 3}
---- !u!137 &2774030702292683482 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 684900048727325401, guid: 75e5103c63d17ca47baf62cea0df8fb2, type: 3}
-  m_PrefabInstance: {fileID: 3458226641126617091}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3909729433412126082 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1854411000079431041, guid: 75e5103c63d17ca47baf62cea0df8fb2, type: 3}
@@ -248,8 +247,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.3, y: 0.3, z: 0.3}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 8.392308, y: 5.876123, z: 8.348353}
+  m_Center: {x: -0.084307656, y: 2.7880616, z: -2.8555262}
 --- !u!114 &3516371421964930131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,4 +261,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e110bab8da30ed419cafdac2c97850a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _renderer: {fileID: 2774030702292683482}

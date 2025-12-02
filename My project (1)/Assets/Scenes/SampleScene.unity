@@ -663,7 +663,6 @@ GameObject:
   - component: {fileID: 1098459941}
   - component: {fileID: 1098459942}
   - component: {fileID: 1098459943}
-  - component: {fileID: 1098459944}
   m_Layer: 0
   m_Name: XR Origin (Mobile AR)
   m_TagString: Untagged
@@ -797,22 +796,6 @@ MonoBehaviour:
   prefabsToSpawn:
   - {fileID: 4208127361932798910, guid: 18d2eeeaad7047e459c876f5e69ee96b, type: 3}
   - {fileID: 3793130520492065556, guid: 287791f86f4f30549af8d5033134cab8, type: 3}
---- !u!114 &1098459944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098459935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728ad7fae8e460a4ba41265c7308d757, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <trackablesChanged>k__BackingField:
-    m_PersistentCalls:
-      m_Calls: []
-  m_AnchorPrefab: {fileID: 0}
 --- !u!1 &1147604804
 GameObject:
   m_ObjectHideFlags: 0
