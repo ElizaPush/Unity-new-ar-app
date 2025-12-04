@@ -766,7 +766,7 @@ MonoBehaviour:
   <trackablesChanged>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
-  m_RaycastPrefab: {fileID: 5762075693303130929, guid: 08ed100068333444e88b8d52987e24dc, type: 3}
+  m_RaycastPrefab: {fileID: 1799045991832704165, guid: 0647fe64b8e6ade41b2bb45ec45c0443, type: 3}
 --- !u!114 &1098459937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,7 +943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CameraToFace: {fileID: 0}
   m_ObjectPrefabs:
-  - {fileID: 5762075693303130929, guid: 08ed100068333444e88b8d52987e24dc, type: 3}
+  - {fileID: 1799045991832704165, guid: 0647fe64b8e6ade41b2bb45ec45c0443, type: 3}
   m_SpawnVisualizationPrefab: {fileID: 0}
   m_SpawnOptionIndex: 0
   m_OnlySpawnInView: 1
